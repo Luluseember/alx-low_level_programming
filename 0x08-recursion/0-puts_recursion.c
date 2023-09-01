@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _puts_recursion - function like puts() writes the string s and a trailing newline to stdout;
+ * _puts_recursion - function like puts() writes the string s 
+ * and a trailing newline to stdout;
  * @s: string to print
  * Return: Always 0 (Success)
  */
