@@ -20,12 +20,10 @@ int _atoi(char *s)
 
 	while (s[f] != '\0')
 		f++;
-
 	while (i < f && a == 0)
 	{
 		if (s[i] == '-')
 			++d;
-
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			figure = s[i] - '0';
@@ -39,10 +37,8 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-
 	if (a == 0)
 		return (0);
-
 	return (n);
 }
 
@@ -55,7 +51,7 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int result, n1, n2;
+	int result, num1, num2;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -63,9 +59,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	n1 = _atoi(argv[1]);
-	n2 = _atoi(argv[2]);
-	result = n1 * n2;
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
 
 	printf("%d\n", result);
 
