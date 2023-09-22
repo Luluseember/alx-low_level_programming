@@ -1,16 +1,10 @@
-section .data
-    hello db "Hello, Holberton\n",0
-
-section .text
-    global main
-    extern printf
+global main
+    Extern printf
 
 main:
-    ; Prepare arguments for printf
-    mov     rdi, hello
-    call    printf
-
-    ; Exit the program
-    mov     rax, 60
+    mov     rdi, format
     xor     rdi, rdi
-    syscall
+    call printf
+ mov  rax, 0
+   ret
+format db "Hello, Holberton\n",0
